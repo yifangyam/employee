@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/yf.ico"/>
+    <title>Employee ID</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="card" data-state="#about">
+       <div class="card-header">
+           <div class="card-cover" style="background-image: url(img/bg.png);"></div>
+           <img src="img/boy.jpg" alt="Avatar" class="card-avatar">
+           <h1 class="card-fullname">Agrivin Jonathan Putra</h1>
+           <h2 class="card-jobtitle">IT Operational Staff</h2>
+       </div>
+       <div class="card-main">
+           <div class="card-section is-active" id="about">
+               <div class="card-content">
+                   <div class="card-subtitle">PT. YIFANG ASSET MANAGEMENT</div>
+                   <p class="card-desc">
+                    Nama : Agrivin Jonathan Putra<br>
+                    Jabatan : IT Operational Staff<br>
+                    No Absen : YF-1089<br>
+                    Departemen : General Affairs</p>
+               </div>
+               <div class="card-social">
+                <a href="https://wa.me/6281310000893"><i class="fab fa-whatsapp-square"></i></a>
+                <a href="mailto:agrivin@yifang.co.id"><i class="fas fa-envelope-square"></i></a>
+                <a href="tel:+6281310000893"><i class="fas fa-phone-square"></i></a>
+                <a href="https://www.linkedin.com/in/agrivinjp/"><i class="fab fa-linkedin"></i></a>
+               </div>
+           </div>
+           <div class="card-section" id="experience">
+               <div class="card-content">
+                   <div class="card-subtitle">PERUSAHAAN</div>
+                   <div class="card-timeline">
+                       <div class="card-item" data-year="2023">
+                           <div class="card-item-title">PT. YIFANG CARGO MUTIARA ELEKTRONIK 2</div>
+                           <div class="card-item-desc">IT Support Staff</div>
+                       </div>
+                    <div class="card-item" data-year="2023">
+                        <div class="card-item-title">PT. YIFANG ASSET MANAGEMENT</div>
+                        <div class="card-item-desc">IT Operational Staff</div>
+                    </div>
+                   </div>
+                    <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439.607599463447!2d106.45791577428072!3d-6.211607993776279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e42014dc587d577%3A0x3dbc564ef7f2afce!2sPT.%20YIFANG%20ECO%20VEHICLE!5e1!3m2!1sen!2sid!4v1718536061562!5m2!1sen!2sid"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+           </div>
+           <div class="card-section" id="contact">
+               <div class="card-content">
+                   <div class="card-subtitle">KONTAK PERSONAL</div>
+                   <div class="card-contact-wrapper">
+                    <div class="card-contact">
+                        <img src="img/location.png" alt="Location">
+                        <a href="https://maps.app.goo.gl/Qjqg1XjZbxXs9VaAA" class="textlink">
+                            Kawasan Industri Cidurian Jl. Unggul, Pasir Bolang, Sentul,
+                            Kec. Balaraja, Kabupaten Tangerang, Banten 15610
+                        </a>
+                    </div>
+                    <div class="card-contact">
+                        <img src="img/phone.png" alt="Phone">
+                        0813-1000-0893
+                    </div>
+                    <div class="card-contact">
+                        <img src="img/mail.png" alt="Email">
+                        agrivin@yifang.co.id
+                    </div> 
+                    <button class="contact-me" onclick="window.location.href='tel:+622129681668'">Kontak Darurat Perusahaan</button>
+                    <button class="contact-me" onclick="window.location.href='https://wa.me/6285173331960'">Kontak Darurat Karyawan</button>
+                   </div>
+                   
+               </div>
+           </div>
+           <div class="card-buttons">
+               <button class="is-active" data-section="#about">IDENTITAS</button>
+               <button  data-section="#experience">PERUSAHAAN</button>
+               <button  data-section="#contact">KONTAK</button>
+           </div>
+       </div>
+    </div>
+<script src="js/script.js"></script>    
+</body>
+</html>
