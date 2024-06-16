@@ -1,65 +1,83 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>YAM DIGITAL ID CARD</title>
-  <link rel="stylesheet" href="./style.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee ID</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css" integrity="sha512-f2MWjotY+JCWDlE0+QAshlykvZUtIm35A6RHwfYZPdxKgLJpL8B+VVxjpHJwZDsZaWdyHVhlIHoblFYGkmrbhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <div class="pCard_card">
-
-        <div class="pCard_up">
-           <div class="pCard_text">
-              <h2>Agrivin Jonathan Putra</h2>
-              <p>IT Operational Staff</p>
-              <div class="location">
-               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                  <circle cx="12" cy="11" r="3" />
-                  <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                </svg>
-                <span>Tangerang, Indonesia</span>
-              </div>
+    <div class="card" data-state="#about">
+       <div class="card-header">
+           <div class="card-cover" style="background-image: url(img/yf.png);"></div>
+           <img src="img/boy.jpg" alt="Avatar" class="card-avatar">
+           <h1 class="card-fullname">Agrivin Jonathan Putra</h1>
+           <h2 class="card-jobtitle">IT Operational Staff</h2>
+       </div>
+       <div class="card-main">
+           <div class="card-section is-active" id="about">
+               <div class="card-content">
+                   <div class="card-subtitle">ABOUT</div>
+                   <p class="card-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel voluptates nihil, quos possimus nulla provident.</p>
+               </div>
+               <div class="card-social">
+                   <a href="#"><img src="img/wa.png" alt="Whatsapp"></a>
+                   <a href="#"><img src="img/mail2.png" alt="Mail"></a>
+                   <a href="#"><img src="img/insta.png" alt="Insta"></a>
+                   <a href="#"><img src="img/linkedin.png" alt="Linkedin"></a>
+               </div>
            </div>
-           <div class="pCard_add"><i class="fa fa-plus"></i></div>
-        </div>
-
-        <div class="pCard_down">
-           <div>
-              <p>Departement</p>
-              <p>General<br>Affairs</p>
+           <div class="card-section" id="experience">
+               <div class="card-content">
+                   <div class="card-subtitle">WORK EXPERIENCE</div>
+                   <div class="card-timeline">
+                       <div class="card-item" data-year="2014">
+                           <div class="card-item-title">Front-end Developer at <span>Jetforms</span></div>
+                           <div class="card-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                       </div>
+                    <div class="card-item" data-year="2016">
+                        <div class="card-item-title">UI Developer at <span>Github</span></div>
+                        <div class="card-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                    </div>
+                    <div class="card-item" data-year="2018">
+                        <div class="card-item-title">Illustrator at <span>Google</span></div>
+                        <div class="card-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                    </div>
+                    <div class="card-item" data-year="2020">
+                        <div class="card-item-title">Full-Stack Developer at <span>Codepen</span></div>
+                        <div class="card-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                    </div>
+                   </div>
+               </div>
            </div>
-           <div>
-              <p>Absen</p>
-              <p>YF-1089</p>
+           <div class="card-section" id="contact">
+               <div class="card-content">
+                   <div class="card-subtitle">KONTAK</div>
+                   <div class="card-contact-wrapper">
+                       <div class="card-contact">
+                           <img src="img/location.png" alt="Location">
+                           PT. Yifang Asset Management, Tangerang, Indonesia
+                       </div>
+                    <div class="card-contact">
+                        <img src="img/phone.png" alt="Phone">
+                        0813-1000-0893
+                    </div>
+                    <div class="card-contact">
+                        <img src="img/mail.png" alt="Email">
+                        agrivin@yifang.co.id
+                    </div> 
+                    <button class="contact-me">Kontak Darurat</button>
+                   </div>
+               </div>
            </div>
-           <div>
-              <p>PT. Yifang</p>
-              <p>Asset Managment</p>
+           <div class="card-buttons">
+               <button class="is-active" data-section="#about">ABOUT</button>
+               <button  data-section="#experience">EXPERIENCE</button>
+               <button  data-section="#contact">KONTAK</button>
            </div>
-        </div>
-
-        <div class="pCard_back">
-           <p>See My Latest Work Here</p>
-           <a href="#"><i class="fab fa-facebook-f"></i></a>
-           <a href="#"><i class="fab fa-linkedin-in"></i></a>
-           <a href="#"><i class="fab fa-behance"></i></a> <br>
-           <a href="#"><i class="fab fa-codepen"></i></a>
-           <a href="#"><i class="fab fa-dribbble"></i></a>
-           <a href="#"><i class="fab fa-instagram"></i></a>
-           <div class="btn">
-               <button class="followMe" style="--bg: #ed145b;">Follow Me</button>
-               <button class="message" style="--bg: #0077b5;">Message</button>
-               <button class="portfolio" style="--bg: #334750">View portfolio</button>
-           </div>
-        </div>
-        
-   </div
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js'></script><script  src="./script.js"></script>
-
+       </div>
+    </div>
+<script src="js/script.js"></script>    
 </body>
 </html>
